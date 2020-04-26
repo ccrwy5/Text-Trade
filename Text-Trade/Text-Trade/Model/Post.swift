@@ -20,12 +20,13 @@ class Post{
     var bookCondition: String
     var bookImage: URL
     var bookCoverType: String
+    var comment: String
     
     
     var peopleWhoLike: [String] = [String]()
 
     
-    init(id: String, author: UserProfile, bookTitle: String, timestamp: Double, bookAuthor: String, classUsedFor: String, postID: String, peopleWhoLike: [String], price: String, bookImage: URL, bookCoverType: String, bookCondition: String) {
+    init(id: String, author: UserProfile, bookTitle: String, timestamp: Double, bookAuthor: String, classUsedFor: String, postID: String, peopleWhoLike: [String], price: String, bookImage: URL, bookCoverType: String, bookCondition: String, comment: String) {
         self.id = id
         self.author = author
         self.bookTitle = bookTitle
@@ -38,6 +39,7 @@ class Post{
         self.bookImage = bookImage
         self.bookCoverType = bookCoverType
         self.bookCondition = bookCondition
+        self.comment = comment
         
     }
     
@@ -61,6 +63,7 @@ class Post{
             let bookImage = data["bookImageURL"] as? String,
             let bookCoverType = data["bookCoverType"] as? String,
             let bookCondition = data["bookCondition"] as? String,
+            let comment = data["comment"] as? String,
             let bookURL = URL(string: bookImage){
             
             let userProfile = UserProfile(uid: uid, username: username, photoURL: url, phoneNumber: phoneNumber, email: email, fullName: fullName)

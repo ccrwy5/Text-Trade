@@ -26,6 +26,8 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
     //@IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var bookCoverTypeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var conditionSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var moreComments: UIButton!
+    
     
     //var delegate: NewPostVCDelegate?
     
@@ -299,6 +301,10 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
                 //print(metadata)
             })
         }
+    }
+    
+    func getNewComment() {
+        
     }
     
     
