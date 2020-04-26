@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-WT" translatesAutoresizingMaskIntoConstraints="NO" id="Kb2-Eh-QGV">
-                                <rect key="frame" x="80" y="104" width="215" height="120"/>
+                                <rect key="frame" x="80" y="104" width="215.00000000000011" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="RYu-2I-A2b"/>
                                 </constraints>
@@ -564,13 +564,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNN-0c-TTb">
-                                <rect key="frame" x="130" y="537" width="114" height="30"/>
-                                <state key="normal" title="More Comments"/>
-                                <connections>
-                                    <segue destination="QkF-gt-1S9" kind="show" id="Fw9-fl-ROu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -591,10 +584,8 @@
                             <constraint firstItem="LGM-aq-b6j" firstAttribute="centerX" secondItem="jG7-Uc-rU8" secondAttribute="centerX" id="W6l-2u-LoS"/>
                             <constraint firstItem="LGM-aq-b6j" firstAttribute="top" secondItem="C1b-CF-Kah" secondAttribute="bottom" constant="15" id="WqX-xB-gqV"/>
                             <constraint firstItem="x4t-mf-qYG" firstAttribute="centerX" secondItem="jG7-Uc-rU8" secondAttribute="centerX" id="YiG-1w-nPp"/>
-                            <constraint firstItem="Zy2-Sv-KVb" firstAttribute="trailing" secondItem="eNN-0c-TTb" secondAttribute="trailing" constant="131" id="Z8B-Zp-kqi"/>
                             <constraint firstItem="6PL-Zm-oym" firstAttribute="leading" secondItem="Zy2-Sv-KVb" secondAttribute="leading" constant="30" id="b2j-C4-wCY"/>
                             <constraint firstItem="x4t-mf-qYG" firstAttribute="top" secondItem="LGM-aq-b6j" secondAttribute="bottom" constant="17" id="cdy-fw-6DB"/>
-                            <constraint firstItem="eNN-0c-TTb" firstAttribute="top" secondItem="x4t-mf-qYG" secondAttribute="bottom" constant="13.5" id="d2e-rW-Hwt"/>
                             <constraint firstItem="jho-rm-oag" firstAttribute="top" secondItem="6PL-Zm-oym" secondAttribute="bottom" constant="25" id="fo0-9Q-B1d"/>
                             <constraint firstItem="fIl-84-cVb" firstAttribute="leading" secondItem="Zy2-Sv-KVb" secondAttribute="leading" constant="30" id="hqU-HI-x1t"/>
                             <constraint firstItem="6dw-1g-93r" firstAttribute="top" secondItem="BLm-3Q-djX" secondAttribute="bottom" constant="35" id="jlP-32-6I4"/>
@@ -602,7 +593,6 @@
                             <constraint firstItem="C1b-CF-Kah" firstAttribute="top" secondItem="l9O-2n-tS3" secondAttribute="bottom" constant="5" id="n8k-0y-pd2"/>
                             <constraint firstItem="C1b-CF-Kah" firstAttribute="leading" secondItem="Zy2-Sv-KVb" secondAttribute="leading" constant="30" id="nyG-6m-Ivm"/>
                             <constraint firstItem="BLm-3Q-djX" firstAttribute="leading" secondItem="Zy2-Sv-KVb" secondAttribute="leading" constant="30" id="rAG-Lo-F8a"/>
-                            <constraint firstItem="Zy2-Sv-KVb" firstAttribute="bottom" secondItem="eNN-0c-TTb" secondAttribute="bottom" constant="7" id="wSm-7i-9IR"/>
                             <constraint firstItem="BLm-3Q-djX" firstAttribute="top" secondItem="Zy2-Sv-KVb" secondAttribute="top" constant="30" id="xUb-K5-Agd"/>
                             <constraint firstItem="jho-rm-oag" firstAttribute="leading" secondItem="Zy2-Sv-KVb" secondAttribute="leading" constant="30" id="xfl-Dc-Rcs"/>
                         </constraints>
@@ -625,7 +615,6 @@
                         <outlet property="bookImageView" destination="6cf-na-KQu" id="jqu-HW-1fF"/>
                         <outlet property="classUsedForTextField" destination="jho-rm-oag" id="c8X-8o-96A"/>
                         <outlet property="conditionSegmentedControl" destination="C1b-CF-Kah" id="8W2-iM-gvu"/>
-                        <outlet property="moreComments" destination="eNN-0c-TTb" id="rR8-l5-Smd"/>
                         <outlet property="postButton" destination="y3C-xE-C33" id="d4e-fa-lNj"/>
                         <outlet property="titleTextField" destination="6dw-1g-93r" id="zk9-kA-0Q2"/>
                     </connections>
@@ -937,47 +926,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVR-KZ-D1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4828" y="498.80059970014997"/>
-        </scene>
-        <!--Comments View Controller-->
-        <scene sceneID="8E4-Yq-6lC">
-            <objects>
-                <viewController id="QkF-gt-1S9" customClass="CommentsViewController" customModule="Text_Trade" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZYE-jO-nSE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add A Comment..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TGG-qA-91T">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="oVt-tQ-mMf" firstAttribute="trailing" secondItem="TGG-qA-91T" secondAttribute="trailing" id="BSV-dW-afv"/>
-                            <constraint firstItem="TGG-qA-91T" firstAttribute="leading" secondItem="oVt-tQ-mMf" secondAttribute="leading" id="NKE-dO-jnW"/>
-                            <constraint firstItem="TGG-qA-91T" firstAttribute="top" secondItem="oVt-tQ-mMf" secondAttribute="top" id="X1X-66-zLY"/>
-                            <constraint firstItem="oVt-tQ-mMf" firstAttribute="bottom" secondItem="TGG-qA-91T" secondAttribute="bottom" id="hL6-kO-WaB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="oVt-tQ-mMf"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="z0b-qW-kpC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="5sQ-iQ-Og6">
-                            <connections>
-                                <action selector="saveButtonWasPressed:" destination="QkF-gt-1S9" id="kcr-i7-nYu"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="commentTextView" destination="TGG-qA-91T" id="3rK-T6-Fgd"/>
-                        <outlet property="saveText" destination="5sQ-iQ-Og6" id="XZy-Ys-x4Q"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aoo-Va-UtH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6080" y="492"/>
         </scene>
     </scenes>
     <resources>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		82F6A83AD5E3AF365C642DF4 /* libPods-Text-Trade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9923D28C683B55C9FB84EF /* libPods-Text-Trade.a */; };
 		C620430A2455FC390021EE80 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62043092455FC390021EE80 /* CommentsViewController.swift */; };
-		C62043102456039D0021EE80 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C620430F2456039D0021EE80 /* Comment.swift */; };
 		C63F3487244653510068A376 /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F3486244653510068A376 /* NotificationSender.swift */; };
 		C6501D812419A60C0012EE41 /* FlexibleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6501D802419A60C0012EE41 /* FlexibleTextField.swift */; };
 		C6ADF9B6243CF107006DC149 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADF9B5243CF107006DC149 /* Notification.swift */; };
@@ -64,7 +63,6 @@
 		780AF08428323227113C3FE4 /* Pods-Text-Trade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text-Trade.debug.xcconfig"; path = "Target Support Files/Pods-Text-Trade/Pods-Text-Trade.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F10E6A2ACFDFF432759C21 /* Pods-Text-Trade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text-Trade.release.xcconfig"; path = "Target Support Files/Pods-Text-Trade/Pods-Text-Trade.release.xcconfig"; sourceTree = "<group>"; };
 		C62043092455FC390021EE80 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
-		C620430F2456039D0021EE80 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		C63F3486244653510068A376 /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
 		C6501D802419A60C0012EE41 /* FlexibleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleTextField.swift; sourceTree = "<group>"; };
 		C6ADF9B2243CC7D3006DC149 /* Text-Trade.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Text-Trade.entitlements"; sourceTree = "<group>"; };
@@ -286,7 +284,6 @@
 				CE258E9624304E3B003DCE90 /* Toast.swift */,
 				C6ADF9B5243CF107006DC149 /* Notification.swift */,
 				C63F3486244653510068A376 /* NotificationSender.swift */,
-				C620430F2456039D0021EE80 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -434,7 +431,6 @@
 				CE60B3CD2443EFCB00D42532 /* IQTitleBarButtonItem.swift in Sources */,
 				CE258E8A2425A272003DCE90 /* HelperExtensions.swift in Sources */,
 				C620430A2455FC390021EE80 /* CommentsViewController.swift in Sources */,
-				C62043102456039D0021EE80 /* Comment.swift in Sources */,
 				CE60B3CE2443EFCB00D42532 /* IQBarButtonItem.swift in Sources */,
 				CE258E82242499E8003DCE90 /* NewPostViewController.swift in Sources */,
 				CE258E8624249DA6003DCE90 /* UserService.swift in Sources */,
