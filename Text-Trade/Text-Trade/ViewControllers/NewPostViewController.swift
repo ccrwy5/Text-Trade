@@ -75,6 +75,19 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
 
     }
     
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+//        let currentText = textField.text ?? ""
+//        guard let stringRange = Range(range, in: currentText) else {
+//            return false
+//        }
+//
+//        let updateText = currentText.replacingCharacters(in: stringRange, with: string)
+//
+//        return updateText.count <= 30
+//
+//    }
+    
     func setupUI(){
         titleTextField.layer.borderWidth = 2
         titleTextField.layer.cornerRadius = 10
